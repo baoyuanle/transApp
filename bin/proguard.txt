@@ -1,0 +1,9 @@
+# view res/layout/activity_main.xml #generated:6
+-keep class android.support.v4.widget.SwipeRefreshLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:17
+-keep class com.barriele.trans.MainActivity { <init>(...); }
+
+# onClick res/layout/activity_main.xml #generated:58
+-keepclassmembers class * { *** onimgClick(...); }
+

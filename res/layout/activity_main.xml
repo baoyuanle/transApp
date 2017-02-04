@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Text1"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:background="#46AB4F"
+                android:text="\r\n\r\n        翻译"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/EditTextIn"
+                android:layout_width="fill_parent"
+                android:layout_height="140dp"
+                android:background="@null"
+                android:gravity="center"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLength="30"
+                android:textSize="40sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <View
+                    android:id="@+id/TextViewLine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#46AB4F" />
+
+                <TextView
+                    android:id="@+id/TextViewOut"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="fill_parent"
+                    android:textIsSelectable="true"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/img_float"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="110dip"
+                    android:onClick="onimgClick"
+                    android:src="@drawable/icgreen" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
